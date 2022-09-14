@@ -1,5 +1,7 @@
 package com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto
 
+import com.sdk.coin.data.remote.dto.coin_detail_dto.ReposUrl
+
 data class Links(
     val announcement_url: List<String>,
     val bitcointalk_thread_identifier: Any,

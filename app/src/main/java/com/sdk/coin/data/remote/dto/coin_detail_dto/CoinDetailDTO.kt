@@ -1,4 +1,6 @@
-package com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto
+package com.sdk.coin.data.remote.dto.coin_detail_dto
+
+import com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto.*
 
 data class CoinDetailDTO(
     val additional_notices: List<Any>,

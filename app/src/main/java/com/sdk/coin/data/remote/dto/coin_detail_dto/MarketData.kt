@@ -1,6 +1,6 @@
 package com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto
 
-import com.sdk.coin.data.remote.dto.coin_detail_dto.Ath
+import com.sdk.coin.data.remote.dto.coin_detail_dto.*
 
 data class MarketData(
     val ath: Ath,

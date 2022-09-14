@@ -1,4 +1,6 @@
-package com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto
+package com.sdk.coin.data.remote.dto.coin_detail_dto
+
+import com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto.Market
 
 data class Ticker(
     val base: String,

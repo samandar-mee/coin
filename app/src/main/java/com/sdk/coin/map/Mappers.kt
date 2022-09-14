@@ -1,9 +1,9 @@
 package com.sdk.coin.map
 
+import com.sdk.coin.data.remote.dto.coin_detail_dto.CoinDetailDTO
 import com.sdk.coin.data.remote.dto.coin_list_dto.CoinListDTOItem
 import com.sdk.coin.domain.model.Coin
 import com.sdk.coin.domain.model.CoinDetail
-import com.sdk.cryptoapp.data.data_source.dto.coin_detail_dto.CoinDetailDTO
 
 fun CoinListDTOItem.toCoin(): Coin {
     return Coin(
