@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                             CoinListScreen(navController = navController)
                         }
                         composable(
-                            route = "${Screen.DetailScreen.route}/{name}/{image}",
+                            route = "${Screen.DetailScreen.route}/{name}",
                             arguments = listOf(
                                 navArgument(name = "name") {
                                     type = NavType.StringType
