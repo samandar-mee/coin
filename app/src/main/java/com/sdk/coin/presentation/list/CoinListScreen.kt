@@ -48,13 +48,6 @@ fun CoinListScreen(
         Column(
             modifier = Modifier.padding(10.dp)
         ) {
-            Spacer(modifier = Modifier.height(10.dp))
-            SearchBar(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp), hint = "Search..."
-            )
-            Spacer(modifier = Modifier.height(16.dp))
             CoinList(viewModel) {
                 navController.navigate(
                     route = "${Screen.DetailScreen.route}/$it"
@@ -92,7 +85,7 @@ fun CoinList(viewModel: CoinListViewModel, onItemClicked: (String) -> Unit) {
                             )
                             .aspectRatio(1f)
                             .clickable {
-                                onItemClicked(coin.name)
+                                onItemClicked(coin.id)
                             }
                     ) {
                         Column {

@@ -37,15 +37,15 @@ class MainActivity : ComponentActivity() {
                             CoinListScreen(navController = navController)
                         }
                         composable(
-                            route = "${Screen.DetailScreen.route}/{name}",
+                            route = "${Screen.DetailScreen.route}/{id}",
                             arguments = listOf(
-                                navArgument(name = "name") {
+                                navArgument(name = "id") {
                                     type = NavType.StringType
                                 }
                             )
                         ) {
-                            val name = it.arguments?.getString("name") ?: ""
-                            DetailScreen(navController = navController, name)
+                            val id = it.arguments?.getString("id") ?: ""
+                            DetailScreen(navController = navController, id)
                         }
                     }
                 }
